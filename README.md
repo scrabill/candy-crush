@@ -44,3 +44,4 @@ In the Browser
 ## Known Bugs
 
 - Top row does not refil if a match is made in the first row and the dragged item came from a different row
+- Column match of 4 does not work
