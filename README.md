@@ -30,7 +30,7 @@ In the Browser
 - Confirm all squares are accounted for in for loops (off by one)
 - Break functions into smaller parts (single responsibility)
     - Abstract creation of squares or setting of attributes
-    -  `randomColor` assigning as it's own function
+    -  ~~`randomColor` assigning as it's own function~~
     - Valid moves / check for a valid move
     - Check for match (row/col and 5/4/3)
     - Drag events

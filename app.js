@@ -12,15 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
         "url(images/green.png)",
         "url(images/blue.png)",
         "url(images/purple.png)"
-    ]    
+    ]
+
+    function randomColor() {
+        return candyColors[Math.floor(Math.random() * candyColors.length)]
+    }
 
     function createBoard() {
         for (let i = 0; i < width * width; i++) {
             const square = document.createElement("div")
             square.setAttribute("draggable", true)
             square.setAttribute("id", i)
-            let randomColor = Math.floor(Math.random() * candyColors.length)
-            square.style.backgroundImage = candyColors[randomColor]
+            square.style.backgroundImage = randomColor()
             grid.appendChild(square)
             squares.push(square)
         }
@@ -93,8 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const firstRow = [0,1,2,3,4,5,6,7]
                 const isFirstRow = firstRow.includes(i)
                 if (isFirstRow && (squares[i].style.backgroundImage === '')) {
-                    let randomColor = Math.floor(Math.random() * candyColors.length)
-                    squares[i].style.backgroundImage = candyColors[randomColor]
+                    squares[i].style.backgroundImage = randomColor()
                 }
             }
         }
