@@ -45,3 +45,5 @@ In the Browser
 
 - Top row does not refil if a match is made in the first row and the dragged item came from a different row
 - Column match of 4 does not work
+- `drag` events do no work on Android and mobile devices.
+   - [https://developer.mozilla.org/en-US/docs/Web/API/Document/drag_event](drag event on MDN)
